@@ -1,0 +1,29 @@
+# -*- coding: UTF-8 -*-
+import unittest
+
+from lib import HTMLTestRunner
+from testcase import *
+
+#用例文件列表
+def getCaselist():
+    alltestnames = [
+        testShowBooks.Test,
+        testAddBook.Test,
+        testUpdateBook.Test,
+        testDelBook.Test
+        ]
+    print('success read case list!')
+    return alltestnames
+
+
+
+if __name__ == '__main__':
+    testunit = unittest.TestSuite()
+    caseList = getCaselist()
+    for case in caseList:
+        testunit.addTest(unittest.makeSuite(case))
+    runner = unittest.TextTestRunner()
+    fp = open('./result.html', 'wb')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='test_report', description='test_desc')
+    runner.run(testunit)
+    fp.close()
