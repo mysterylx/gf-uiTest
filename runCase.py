@@ -6,14 +6,14 @@ from testcase import *
 
 #用例文件列表
 def getCaselist():
-    alltestnames = [
+    allTestNames = [
         testShowBooks.Test,
         testAddBook.Test,
         testUpdateBook.Test,
         testDelBook.Test
         ]
     print('success read case list!')
-    return alltestnames
+    return allTestNames
 
 
 
@@ -24,6 +24,6 @@ if __name__ == '__main__':
         testunit.addTest(unittest.makeSuite(case))
     runner = unittest.TextTestRunner()
     fp = open('./result.html', 'wb')
-    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='test_report', description='test_desc')
+    runner = HTMLTestRunner.HTMLTestRunner(stream=fp, title='webTestReport', description='webTestReport')
     runner.run(testunit)
     fp.close()

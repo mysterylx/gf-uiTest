@@ -10,12 +10,13 @@ from lib import webDriver
 class Test(unittest.TestCase):
 
     def setUp(self):
-
-        self.driver = webDriver.DriverFactory().creater('FireFox').getDriver()
+        self.driverFactory = webDriver.DriverFactory()
+        self.driver = self.driverFactory.creater('FireFox').getDriver()
         self.driver.implicitly_wait(30)
         self.driver.get(config.URL)
         time.sleep(2)
 
+    '''添加前检查是否存在id=1000的对象，若存在先删除'''
     def beginAdd(self):
         driver = self.driver
         driver.find_element_by_xpath(elementLocation.BOOKMANAGER).click()
@@ -30,14 +31,14 @@ class Test(unittest.TestCase):
             delButton.click()
             time.sleep(2)
             message = driver.find_element_by_xpath(elementLocation.DIV_MESSAGE)
-            isdeleted = message.find_element_by_xpath(elementLocation.BUTTON_YES)
-            isdeleted.click()
+            isDeleted = message.find_element_by_xpath(elementLocation.BUTTON_YES)
+            isDeleted.click()
             time.sleep(2)
             driver.find_element_by_xpath(elementLocation.BUTTON_OK).click()
         except Exception, e:
             pass
 
-
+    '''添加id=1000的book，预期添加成功'''
     def testAddBook(self):
         self.beginAdd()
         driver = self.driver
@@ -50,13 +51,13 @@ class Test(unittest.TestCase):
         time.sleep(2)
 
         bookInfo = driver.find_element_by_xpath(elementLocation.DIV_BOOKADD_INFO);
-        bookid = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKID)
+        bookId = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKID)
         bookName = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKNAME)
         bookAuthor = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKAUTHOR)
         bookYear = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKYEAR)
         bookdesc = bookInfo.find_element_by_xpath(elementLocation.INPUT_DESC)
 
-        bookid.send_keys("1000")
+        bookId.send_keys("1000")
         bookName.send_keys("test")
         bookAuthor.send_keys("test")
         bookYear.send_keys("2017")
@@ -71,6 +72,7 @@ class Test(unittest.TestCase):
         assert messageValue.text == u'添加书籍成功'
         driver.find_element_by_xpath(elementLocation.BUTTON_OK).click()
 
+    '''添加id已经存在的book，预期添加失败'''
     def testAddSameBook(self):
         driver = self.driver
         driver.find_element_by_xpath(elementLocation.BOOKMANAGER).click()
@@ -80,13 +82,13 @@ class Test(unittest.TestCase):
         time.sleep(2)
 
         bookInfo = driver.find_element_by_xpath(elementLocation.DIV_BOOKADD_INFO);
-        bookid = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKID)
+        bookId = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKID)
         bookName = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKNAME)
         bookAuthor = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKAUTHOR)
         bookYear = bookInfo.find_element_by_xpath(elementLocation.INPUT_BOOKYEAR)
         bookdesc = bookInfo.find_element_by_xpath(elementLocation.INPUT_DESC)
 
-        bookid.send_keys("1000")
+        bookId.send_keys("1000")
         bookName.send_keys("test")
         bookAuthor.send_keys("test")
         bookYear.send_keys("2017")

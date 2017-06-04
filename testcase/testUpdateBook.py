@@ -10,11 +10,13 @@ from lib import webDriver
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webDriver.DriverFactory().creater('FireFox').getDriver()
+        self.driverFactory = webDriver.DriverFactory()
+        self.driver = self.driverFactory.creater('FireFox').getDriver()
         self.driver.implicitly_wait(30)
         self.driver.get(config.URL)
         time.sleep(2)
 
+    '''修改列表中第一本book的bookName，为保障列表存在book，此case在addbook后执行'''
     def testUpdateBook(self):
         driver = self.driver
         driver.find_element_by_xpath(elementLocation.BOOKMANAGER).click()

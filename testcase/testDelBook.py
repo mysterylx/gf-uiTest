@@ -10,12 +10,13 @@ from lib import webDriver
 class Test(unittest.TestCase):
 
     def setUp(self):
-
-        self.driver = webDriver.DriverFactory().creater('FireFox').getDriver()
+        self.driverFactory = webDriver.DriverFactory()
+        self.driver = self.driverFactory.creater('FireFox').getDriver()
         self.driver.implicitly_wait(30)
         self.driver.get(config.URL)
         time.sleep(2)
 
+    '''删除图书列表里面的第一本图书，为保障肯定存在图书，此case在addbook之后执行'''
     def testDeleteBook(self):
         driver = self.driver
         driver.find_element_by_xpath(elementLocation.BOOKMANAGER).click()

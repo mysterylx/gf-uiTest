@@ -10,7 +10,8 @@ from lib import webDriver
 class Test(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webDriver.DriverFactory().creater('FireFox').getDriver()
+        self.driverFactory = webDriver.DriverFactory()
+        self.driver = self.driverFactory.creater('FireFox').getDriver()
         self.driver.implicitly_wait(30)
         self.driver.get(config.URL)
         time.sleep(2)
