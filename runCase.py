@@ -2,7 +2,7 @@
 import unittest
 
 from lib import HTMLTestRunner
-from testcase import *
+from testCase import *
 
 #用例文件列表
 def getCaselist():

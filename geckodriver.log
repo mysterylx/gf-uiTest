@@ -67,3 +67,60 @@ See /usr/include/servers/bootstrap_defs.h for the error codes.
 2017-06-04 16:34:16.663 plugin-container[13887:445566] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
 JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
 JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+1496578706141	geckodriver	INFO	Listening on 127.0.0.1:60224
+1496578707234	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1496578709637	Marionette	INFO	Listening on port 60229
+1496578709733	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-06-04 20:18:30.344 plugin-container[17639:501299] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:18:30.344 plugin-container[17639:501299] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e47, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:18:30.344 plugin-container[17639:501299] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+1496578715628	geckodriver	INFO	Listening on 127.0.0.1:60297
+1496578716564	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1496578718596	Marionette	INFO	Listening on port 60307
+1496578718679	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-06-04 20:18:39.220 plugin-container[17644:501896] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8f57, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:18:39.222 plugin-container[17644:501896] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x4e17, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:18:39.223 plugin-container[17644:501896] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+1496578760847	geckodriver	INFO	Listening on 127.0.0.1:60422
+1496578761961	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1496578764469	Marionette	INFO	Listening on port 60431
+1496578764547	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-06-04 20:19:25.193 plugin-container[17656:502721] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8f53, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:25.194 plugin-container[17656:502721] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x4f17, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:25.194 plugin-container[17656:502721] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+1496578772931	geckodriver	INFO	Listening on 127.0.0.1:60545
+1496578774020	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1496578776025	Marionette	INFO	Listening on port 60555
+1496578776153	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-06-04 20:19:36.746 plugin-container[17662:503338] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e5b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:36.746 plugin-container[17662:503338] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8f23, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:36.746 plugin-container[17662:503338] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+1496578786700	geckodriver	INFO	Listening on 127.0.0.1:60670
+1496578787785	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+1496578789743	Marionette	INFO	Listening on port 60679
+1496578789818	Marionette	WARN	TLS certificate errors will be ignored for this session
+2017-06-04 20:19:50.473 plugin-container[17667:503968] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x8e43, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:50.473 plugin-container[17667:503968] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x952b, name = 'com.apple.CFPasteboardClient'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2017-06-04 20:19:50.473 plugin-container[17667:503968] Failed to allocate communication port for com.apple.CFPasteboardClient; this is likely due to sandbox restrictions
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
+JavaScript warning: http://localhost:8080/Extjs4.2.2.1144/ext-all.js, line 21: unreachable code after return statement
